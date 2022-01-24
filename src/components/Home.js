@@ -122,6 +122,7 @@ const Home = ({ user }) => {
                     {pomodoros.length ? (
                         pomodoros.map((pomodoro) => (
                             <PomodoroItem
+                                user={user}
                                 key={pomodoro.id}
                                 pomodoro={pomodoro}
                                 onDelete={() => deletePomodoro(pomodoro.id)}

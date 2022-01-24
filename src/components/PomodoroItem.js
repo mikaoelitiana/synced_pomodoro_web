@@ -1,4 +1,4 @@
-const PomodoroItem = ({ pomodoro, onDelete }) => {
+const PomodoroItem = ({ pomodoro, onDelete, user }) => {
     return (
         <div
             className={"p-3 max-h-14 flex align-center justify-between border"}
@@ -22,16 +22,18 @@ const PomodoroItem = ({ pomodoro, onDelete }) => {
                     <b>{pomodoro.loop_before_long_break} loops</b>
                 </span>
             </span>
-            <button
-                className={"font-mono text-red-500 text-xl border px-2"}
-                onClick={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    onDelete();
-                }}
-            >
-                X
-            </button>
+            {user.id === pomodoro.created_by && (
+                <button
+                    className={"font-mono text-red-500 text-xl border px-2"}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        onDelete();
+                    }}
+                >
+                    ❌
+                </button>
+            )}
         </div>
     );
 };
