@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { supabase } from "../lib/api";
 import RecoverPassword from "./RecoverPassword";
@@ -12,7 +12,6 @@ const Home = ({ user }) => {
         // formState: { errors },
     } = useForm();
     const [pomodoros, setPomodoros] = useState([]);
-    const pomodoroNameTextRef = useRef();
     const [errorText, setError] = useState("");
 
     useEffect(() => {
