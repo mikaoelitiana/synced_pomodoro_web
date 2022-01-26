@@ -16,6 +16,7 @@
 ## Build from scratch
 
 ```
+cp .env.template .env
 yarn
 yarn build
 ```
