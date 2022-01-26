@@ -1,0 +1,2 @@
+INSERT INTO public.pomodoros ("name",created_at,created_by,starting_at,focus,break,long_break,active,loop_before_long_break,ending_at) VALUES
+	 ('Europe Base Pomodoro 🇪🇺','2022-01-19 16:26:21.000',NULL,'09:30:00',25,5,15,true,4,'18:30:00');
