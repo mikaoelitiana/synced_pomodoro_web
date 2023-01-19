@@ -134,7 +134,7 @@ const Home = ({ user }) => {
                                 "h-full flex justify-center items-center"
                             }
                         >
-                            You do have any tasks yet!
+                            You do have any pomodoro yet!
                         </span>
                     )}
                 </div>
