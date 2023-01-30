@@ -4,7 +4,7 @@
     "private": true,
     "dependencies": {
         "@craco/craco": "^6.4.3",
-        "@supabase/supabase-js": "^1.2.1",
+        "@supabase/supabase-js": "^2.5.0",
         "@tailwindcss/postcss7-compat": "^2.0.2",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^11.1.0",
